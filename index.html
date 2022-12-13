@@ -845,21 +845,44 @@
                 </ul>
         </div>
     </main>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login  | <a  href="https://www.configuroweb.com/">ConfiguroWeb</a></h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Usuario" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Contraseña" id="password" required>
+				<input type="submit" value="Ingresar">
+			</form>
+		</div>
+	</body>
+
     <footer id="footer">
         <div class="container-footer">
             <p>I.E.P "Nuestra Señora del Rosario" N° 20125 - Copyright © 2022 <br>
                 Todos los derechos reservados <br>
                 Desing by Team 08</p>
         </div>
-
+        
     </footer>
-
+    
     <script src="/AOS/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="/js/animation.js"></script>
     <script src="/server.js"></script>
+    
 </body>
 
 </html>
