@@ -9,6 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="/AOS/aos.css" />
     <link rel="stylesheet" href="/css/contactanos.css">
+    <link rel="stylesheet" href="resources/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="/FormPedido/resources/css/estilos.css">
 </head>
 
 
@@ -753,80 +756,42 @@
         <!--INICIO:Contactanos-->
    <section id="contactanos" class="section contactme">
     <div class="section-title">
-       <h2 class="title">Contactanos 📞</h2>
-       <span class="subtitle">Atencion las 24h</span>
+        <body>
+        <div id="overview">
+            <section class="order" id="order">
+                <h1 class="heading"><span>Consulta</span></h1>
+                <div id="form" class="row">
+                    <form class="form">
+                        <div class="inputBox">
+                            <input id="USERPED" placeholder="Nombre" type="text" class="form-control" />
+                            <input id="EMAUSPED" placeholder="Correo" type="text" class="form-control" />
+                        </div>
+                        <div class="inputBox">
+                            <input id="CELUSPED" placeholder="Celular" type="text" class="form-control" />
+                            <input id="FOODPED" placeholder="Pedido" type="text" class="form-control" />
+                        </div>
+                        <textarea id="MSGPED" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                        <button id="btnCrear" type="submit" class="btn btn-secondary">
+                            Ordenar ahora
+                        </button>
+                    </form>
+                </div>
+            </section>
         </div>
-        <div class="container">
-        <div class="contactme-contacts">
-            <div class="contact">
-                <svg class="icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Telefono icono</title>
-                    <path
-                   d="M23.653 14.893c-.298 0-.61-.095-.907-.163a12.767 12.767 0 0 1-1.775-.53 2.703 2.703 0 0 0-3.36 1.359l-.298.611a16.51 16.51 0 0 1-3.604-2.717 16.55 16.55 0 0 1-2.71-3.615l.57-.38a2.725 2.725 0 0 0 1.355-3.37 14.078 14.078 0 0 1-.53-1.78 10.14 10.14 0 0 1-.162-.924A4.08 4.08 0 0 0 10.822.94 4.057 4.057 0 0 0 8.167 0H4.103a4.054 4.054 0 0 0-3.09 1.384 4.08 4.08 0 0 0-.975 3.25 25.846 25.846 0 0 0 7.367 15.032A25.713 25.713 0 0 0 22.421 27h.514A4.058 4.058 0 0 0 27 22.91v-4.076a4.083 4.083 0 0 0-.97-2.572 4.062 4.062 0 0 0-2.377-1.369zm.678 8.153a1.363 1.363 0 0 1-.98 1.306 1.432 1.432 0 0 1-.592.053 23.007 23.007 0 0 1-13.396-6.617A23.127 23.127 0 0 1 2.83 4.32a1.485 1.485 0 0 1 .339-1.114 1.355 1.355 0 0 1 1.016-.462H8.25A1.352 1.352 0 0 1 9.603 3.82c.055.371.122.738.204 1.1.156.717.364 1.42.623 2.106l-1.897.884a1.355 1.355 0 0 0-.789 1.29c.008.179.05.355.125.517a19.66 19.66 0 0 0 9.484 9.512c.33.135.7.135 1.03 0a1.353 1.353 0 0 0 .772-.707l.84-1.902c.7.25 1.416.46 2.141.625.361.081.727.15 1.097.204a1.354 1.354 0 0 1 1.07 1.358l.028 4.24z"
-                   fill="#000000" />
-                </svg>
-                <div class="data">
-                    <h3 class="title">Celular</h3>
-                    <span class="subtitle">972-386-723</span>
+        <section class="copy" style="margin-top: 2em;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="contact">
-                <svg class="icon" width="27" height="22" viewBox="0 0 27 22" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Email icono</title>
-                    <path
-                    d="M22.95 0H4.05A4.05 4.05 0 0 0 0 4.05v13.5a4.05 4.05 0 0 0 4.05 4.05h18.9A4.05 4.05 0 0 0 27 17.55V4.05A4.05 4.05 0 0 0 22.95 0zm-.553 2.7-7.938 7.938a1.35 1.35 0 0 1-1.918 0L4.603 2.7h17.794zM24.3 17.55a1.35 1.35 0 0 1-1.35 1.35H4.05a1.35 1.35 0 0 1-1.35-1.35V4.603l7.938 7.938a4.05 4.05 0 0 0 5.724 0L24.3 4.603V17.55z"
-                    fill="#000000" />
-                </svg>
-                <div class="data">
-                    <h3 class="title">Gmail</h3>
-                    <span class="subtitle">iensa@gmail.com</span>
-                </div>
-            </div>
-            <div class="contact">
-                <svg class="icon" width="22" height="27" viewBox="0 0 22 27" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <title>Ubicacion</title>
-                    <path
-                   d="M10.8 0A10.8 10.8 0 0 0 0 10.8c0 7.29 9.517 15.525 9.922 15.876a1.35 1.35 0 0 0 1.755 0C12.15 26.325 21.6 18.09 21.6 10.8A10.8 10.8 0 0 0 10.8 0zm0 23.827c-2.876-2.7-8.1-8.518-8.1-13.027a8.1 8.1 0 1 1 16.2 0c0 4.509-5.224 10.34-8.1 13.027zm0-18.427a5.4 5.4 0 1 0 0 10.8 5.4 5.4 0 0 0 0-10.8zm0 8.1a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z"
-                   fill="#000000" />
-                </svg>
-                <div class="data">
-                    <h3 class="title">Ubicacion</h3>
-                    <span class="subtitle">Av.Gloria.Zuñiga S/N</span>
-                </div>
-            </div>
-        </div>
-       <form class="contactme-form" id="formulario-contactanos">
-          <div class="contactme-field -name">
-             <label for="nombre" class="label">Nombre</label>
-             <input id="nombre" type="text" class="input" placeholder="Alex Doe">
-          </div>
-          <div class="contactme-field -mail">
-             <label for="correo" class="label">Gmail</label>
-             <input id="correo" type="email" class="input" placeholder="alex.doe@gmail.com">
-          </div>
-          <div class="contactme-field -project">
-             <label for="asunto" class="label">Asunto</label>
-             <input id="asunto" type="text" class="input" placeholder="Matricula">
-          </div>
-          <div class="contactme-field -message">
-             <label for="descripcion" class="label">Descripcion</label>
-             <textarea id="descripcion" class="input" cols="0" rows="7" placeholder="Detallar el asunto..."></textarea>
-          </div>
-          <button type="submit" id="btn-submit" class="calltoaction -submit">
-             Enviar datos
-             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <title>Enviar datos</title>
-                <path
-                   d="M14.67 5.853 3.472.251A2.4 2.4 0 0 0 .207 3.372l1.92 4.298a.849.849 0 0 1 0 .656l-1.92 4.297A2.402 2.402 0 0 0 2.4 16a2.51 2.51 0 0 0 1.08-.256l11.2-5.602a2.4 2.4 0 0 0 0-4.289h-.008zM13.96 8.71l-11.2 5.601a.8.8 0 0 1-1.08-1.04l1.912-4.297c.025-.057.046-.116.064-.176h5.512a.8.8 0 0 0 0-1.6H3.655a1.6 1.6 0 0 0-.064-.177L1.68 2.724a.8.8 0 0 1 1.08-1.04l11.2 5.601a.8.8 0 0 1 0 1.425z" />
-             </svg>
-          </button>
-       </form>
-    </div>
- </section>
- <!--FIN:Contactanos-->
+        </section>
+        <script src="/FormPedido/resources/js/bootstrap.bundle.min.js"></script>
+        <script src="/FormPedido/resources/registro.js"></script>
+    </body>
 
 
 

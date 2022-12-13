@@ -10,10 +10,10 @@ app.use(express.static(__dirname + '/'));
  
 //Verficar si esta informacion es correcta de acuerdo a tu localhost
 var conexion = mysql.createConnection({
-  host: "52.73.155.169",
-  user: "hebert",
-  password: "12345",
-  database: "db_landig_page"
+  host: "localhost",
+  user: "root",
+  password: "root",
+  database: "dbRestaurante",
 });
  
 //Verificar si la conexion a base de datos fue exitosa ,de lo contrario te devolvera un error
@@ -30,24 +30,21 @@ const puerto = process.env.PUERTO || 3000;
 app.listen(puerto, function () {
   console.log("Servidor funcionando en puerto: " + puerto);
 });
- 
-//El contrato entre el servidor y el cliente para permitir la inserción de registros en la tabla
-app.post("/api/contactanos", (req, res) => {
-    console.log('datos : ', req.body);
-    let data = {
-        nomcon: req.body.nombre,
-        corrcon: req.body.correo,
-        asucon: req.body.asunto,
-        descon: req.body.descripcion
-    };
-    //Insertamos los datos en tabla creada CONTACTANOS
-    let sql = "INSERT INTO contactanos SET ?";
-    conexion.query(sql, data, function (error, results) {
-    if (error) {
-        throw error;
-    } else {
-        console.log(data);
-        res.send(data);
-    }
-    });
+app.post("/api/pedido", (req, res) => {
+	let data = {
+    	userped: req.body.USERPED,
+    	emausped: req.body.EMAUSPED,
+    	celusped: req.body.CELUSPED,
+    	foodped: req.body.FOODPED,
+    	msgped: req.body.MSGPED
+	};
+	let sql = "INSERT INTO pedido SET ?";
+	conexion.query(sql, data, function (error, results) {
+  	if (error) {
+    	throw error;
+  	} else {
+    	console.log(data);
+    	res.send(data);
+  	}
+	});
   });
