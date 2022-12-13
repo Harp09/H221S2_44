@@ -4,7 +4,7 @@
   "description": "Lading Page de un colegio",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon connect.js"
+    "start": "node server.js"
 
   },
   "repository": {

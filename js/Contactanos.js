@@ -1,4 +1,4 @@
-const url = "http://52.73.155.169:3000/api/contactanos"; //Cambiar por ip del servidor en caso la db este en otra maquina. (34.193.52.0/)
+const url = "http://44.212.135.107:3000/api/contactanos"; //Cambiar por ip del servidor en caso la db este en otra maquina. (34.193.52.0/)
  
 const formContactanos = document.getElementById("formulario-contactanos");
 const nombre = document.getElementById("nombre");
