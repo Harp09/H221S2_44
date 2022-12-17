@@ -1,9 +1,24 @@
-//De acuerdo a lo que hemos instalado
-var express = require("express");
-var mysql = require("mysql");
+var express = require('express');
 var app = express();
+app.get('/', (req, res) => {
+//res.send('Hello World with express!')
+res.sendFile("/home/ubuntu/H221S2_05/index.html")
+});
+
+app.listen(3000);
+console.log('Server on port 3000');
+
+//Recursos
+app.use(express.static(__dirname+'/'));
+
+
+
+//De acuerdo a lo que hemos instalado
+
+var mysql = require("mysql");
+
 var cors = require("cors");
- 
+
 app.use(express.json());
 app.use(cors());
 app.use(express.static(__dirname + '/'));
@@ -13,7 +28,7 @@ var conexion = mysql.createConnection({
   host: "44.212.135.107",
   user: "hebert",
   password: "12345",
-  database: "Colegio_Asia_BD",
+  database: "formulario",
 });
  
 //Verificar si la conexion a base de datos fue exitosa ,de lo contrario te devolvera un error
