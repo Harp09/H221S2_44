@@ -1,141 +1,127 @@
+/*SECCION CONTACTO*/
+ 
+ 
+.contacto{
+   padding-top: 5rem;
 
- 
-@media screen and (min-width: 610px) {
-   .contactme>.container>.contactme-contacts {
-      align-self: flex-start;
-      margin: 0;
+}
+
+
+.contacto h2{
+   text-align: center;
+   color: var(--azulClaro);
+   font-size: 5rem;
+}
+
+@media(min-width: 768px) {
+   .contenido-contacto{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
    }
 }
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-contacts {
-      width: 75%;
-      align-self: flex-start;
-      margin: 0;
-   }
-}
- 
-.contactme>.container>.contactme-contacts>.contact {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   margin-bottom: 3.5rem;
-}
- 
-.contactme>.container>.contactme-contacts>.contact>.icon {
-   margin-right: 1.6rem;
-}
- 
-.contactme>.container>.contactme-contacts>.contact>.icon>path {
-   fill: var(#343434);
-}
- 
-.contactme>.container>.contactme-contacts>.contact>.data>.title {
-   font-size: 1.8rem;
-   color: var(#343434);
-}
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-contacts>.contact>.data>.title {
-      font-size: 2.1rem;
-   }
-}
- 
-.contactme>.container>.contactme-contacts>.contact>.data>.subtitle {
-   font-size: 1.3rem;
-   color: var(#343434);
-}
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-contacts>.contact>.data>.subtitle {
-      font-size: 1.4rem;
-   }
-}
- 
-.contactme>.container>.contactme-form {
-   width: 100%;
-   display: block;
-   padding: 0 0 10rem;
-}
- 
-@media screen and (min-width: 610px) {
-   .contactme>.container>.contactme-form {
-      padding: 0 0 5rem;
-   }
-}
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2.4rem;
-      grid-template-areas: "name email"
-         "project project"
-         "message message"
-         "submit .";
-   }
-}
- 
-.contactme>.container>.contactme-form>.contactme-field {
-   width: 100%;
-   height: 7.3rem;
-   background-color: var(#343434);
-   border-radius: 1rem;
-   padding: 1.6rem;
-   margin-bottom: 2.4rem;
-}
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-form>.contactme-field {
-      height: 8rem;
-   }
- 
-   .contactme>.container>.contactme-form>.contactme-field.-name {
-      grid-area: name;
-   }
- 
-   .contactme>.container>.contactme-form>.contactme-field.-email {
-      grid-area: email;
-   }
- 
-   .contactme>.container>.contactme-form>.contactme-field.-project {
-      grid-area: project;
-   }
-}
- 
-.contactme>.container>.contactme-form>.contactme-field.-message {
+
+.informacion-contacto{
+   background-image: url('/img/g1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -1;
    height: auto;
-   grid-area: message;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
 }
- 
-.contactme>.container>.contactme-form>.contactme-field>.label {
-   font-size: 1.2rem;
-   font-weight: var(--medium-font);
-   color: var(#343434);
-}
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-form>.contactme-field>.label {
-      font-size: 1.4rem;
+@media(min-width: 788px) {
+   .informacion-contacto{
+       height: 122.7vh;
    }
 }
- 
-.contactme>.container>.contactme-form>.contactme-field>.input {
+.informacion-contacto::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: -1;
+}
+.informacion-contacto h3{
+   font-size: 4rem;
+   text-align: center;
+}
+.informacion-contacto p{
+   font-size: 2rem;
+}
+.informacion-contacto h3, .informacion-contacto p{
+   color: var(--blanco);
+}
+.form{         /*FORMULARIO */  
+   padding: 5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: var(--azulOscuro);
+
+
+}
+.inputBox label{
+   color: var(--blanco);
+   font-family: var(--parrafos);
+   display: block;
+   margin: 1rem 0;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.inputBox input{
+
+   padding: 1.8rem 1rem;
+   font-family: var(--parrafos);
+}
+
+.inputBox input, .inputBox textarea{
    width: 100%;
-   font-size: 1.5rem;
-   font-weight: var(--medium-font);
-   line-height: 1.5;
-   color: var(#343434);
-   border: none;
-   overflow: hidden;
-   padding: 0.5rem;
-   background-color: transparent;
+   outline: none;
 }
- 
-@media screen and (min-width: 1024px) {
-   .contactme>.container>.contactme-form>.-submit {
-      grid-area: submit;
-      width: 80%;
-   }
+
+
+.inputBox input[type="submit"]{
+   width: auto;
+   padding: 1rem 3rem;
+   transition: background-color .3s ease-in-out;
 }
-/*=== Contactanos :FIN ===*/
+
+.inputBox input[type="submit"]:hover{
+   background-color: var(--blanco);
+   color: var(--azulClaro);
+}
+
+.btn {
+   background-color: var(--azulClaro);
+   color: var(--blanco);
+
+}
+
+:root{
+   --negro: #393939;
+   --blanco: #ececec;
+   --sombra-ppal: #c9c9c9;
+   --sombra-sec: #ffffff;
+   --borde-negro: #00000050;
+   --marcado: rgb(127, 195, 255);
+   --white:#fff;
+   --lite:#f7f7f7;
+   --black:#1e1e1e;
+   --pink:#c2102d;
+   --secondary:#202124;
+   --gray:#b8bca7;
+   --blue:#061221;
+   --oscuro:#07070A;
+   --azulOscuro:#0A1128;
+   --azulClaro:#006FE6;
+   --blanco:#FEFCFB;
+   --titulos:'Baloo 2', cursive;
+   --parrafos:'Montserrat', sans-serif;
+}
