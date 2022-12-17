@@ -21,7 +21,7 @@
 }
 
 .informacion-contacto{
-   background-image: url('../img/contacto.jpg');
+   background-image: url('/img/g1.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    position: relative;
@@ -102,4 +102,26 @@
    background-color: var(--azulClaro);
    color: var(--blanco);
 
+}
+
+:root{
+   --negro: #393939;
+   --blanco: #ececec;
+   --sombra-ppal: #c9c9c9;
+   --sombra-sec: #ffffff;
+   --borde-negro: #00000050;
+   --marcado: rgb(127, 195, 255);
+   --white:#fff;
+   --lite:#f7f7f7;
+   --black:#1e1e1e;
+   --pink:#c2102d;
+   --secondary:#202124;
+   --gray:#b8bca7;
+   --blue:#061221;
+   --oscuro:#07070A;
+   --azulOscuro:#0A1128;
+   --azulClaro:#006FE6;
+   --blanco:#FEFCFB;
+   --titulos:'Baloo 2', cursive;
+   --parrafos:'Montserrat', sans-serif;
 }
