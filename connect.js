@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.get('/', (req, res) => {
 //res.send('Hello World with express!')
-res.sendFile("/home/ubuntu/H221S2_05/index.html")
+res.sendFile("/home/ubuntu/landing/H221S2_44")
 });
 
 app.listen(3000);
@@ -53,7 +53,7 @@ app.post("/api/pedido", (req, res) => {
     	foodped: req.body.FOODPED,
     	msgped: req.body.MSGPED
 	};
-	let sql = "INSERT INTO pedido SET ?";
+	let sql = "INSERT INTO PEDIDO SET ?";
 	conexion.query(sql, data, function (error, results) {
   	if (error) {
     	throw error;
